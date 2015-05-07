@@ -1,6 +1,6 @@
 <?php
 include_once("php_includes/check_login_status.php");
-$envelope = '<img src="images/notifications.jpg" width="22" height="12" alt="Notes" title="This envelope is for logged in members">';
+$envelope = '<img src="images/notifications.png" width="22" height="12" alt="Notes" title="This envelope is for logged in members">';
 $loginLink = '<a href="login.php">Log In</a> &nbsp; | &nbsp; <a href="signup.php">Sign Up</a>';
 if($user_ok == true) {
 	$sql = "SELECT notescheck FROM users WHERE username='$log_username' LIMIT 1";
